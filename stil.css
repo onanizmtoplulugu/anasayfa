@@ -69,7 +69,7 @@ nav .menue {
     min-height: fit-content;
     width: 60%;
     background-color: gray;
-   
+    padding-bottom: 20px;
     background-color: #4d4d4d;
     box-shadow: -10px 8px 10px #141414, 3px 2.3px 10px #141414;
     position: relative;
