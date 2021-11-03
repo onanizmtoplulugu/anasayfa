@@ -12,6 +12,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
 }
 .ic-yazi {
     margin: 20px;
@@ -61,6 +62,27 @@ body {
     padding: 5px;
     background-color: #7289da;
     border: 2px solid #7289da;
+    color: #fff;
+    text-align: center;
+    display: inline-block;
+    font-family: Whitney, "Open Sans", Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 11pt;
+    border-radius: 3px;
+    box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.2);
+    animation: exist;
+    animation-duration: 3s;
+    animation-delay: 1.5s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+    text-decoration:none;
+    margin: 10px auto;
+}
+.purple-button {
+    position: relative;
+    padding: 5px;
+    background-color: #bf2cd3;
+    border: 2px solid #bf2cd3;
     color: #fff;
     text-align: center;
     display: inline-block;
