@@ -2,6 +2,7 @@
     padding:0;
     margin:0;
 }
+a:any-link{color: white;}
 nav {
     position: sticky;
 }
