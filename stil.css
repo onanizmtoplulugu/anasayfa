@@ -35,9 +35,10 @@ body {
     align-items: center;
 }
 .content-frame {
-    flex: 1 1 auto;
+    flex: 2 1 auto;
     max-width: 600px;
     min-height: 80%;
+    max-height: 100%;
     background-color: gray;
     height: 90%;
     width: 60%;
