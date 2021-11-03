@@ -15,7 +15,7 @@ nav .menue {
     color: rgb(210, 210, 210);;
     font-family: 'Poppins', sans-serif;
     display: flex;
-    justify-content:space-between
+    justify-content:space-between;
 
 }
 .menue .navitem {
@@ -24,8 +24,12 @@ nav .menue {
     padding-bottom: 2px;
     cursor: pointer;
     transition: transform 0.5s ease-out;
+    text-decoration: none;
 
 }
+.navitem:visited{color:white;}
+.navitem:active{color:white;}
+
 .navitem:hover {
     border-bottom: 2px solid white;
     color: white;
