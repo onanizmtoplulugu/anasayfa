@@ -8,6 +8,30 @@ nav {
 body {
     background-color: #262626;
 }
+nav div {
+    margin: 20px;
+}
+nav .menue {
+    color: rgb(210, 210, 210);;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content:space-between
+
+}
+.menue .navitem {
+    margin: 0px 10px;
+    border-bottom: 2px solid rgb(210, 210, 210);;
+    padding-bottom: 2px;
+    cursor: pointer;
+    transition: transform 0.5s ease-out;
+
+}
+.navitem:hover {
+    border-bottom: 2px solid white;
+    color: white;
+    transform: scaleX(1.05);
+
+}
 .centerdummy{
     display: flex;
     align-items: center;
@@ -26,10 +50,9 @@ body {
     justify-content: center;
     align-items: center;
     display: flex;
+    height: min-content;
 }
 #main-frame {
-    width: 80vw;
-    height: 95vh;
     justify-content: center;
     display: flex;
     align-items: center;
@@ -38,10 +61,10 @@ body {
     flex: 2 1 auto;
     max-width: 600px;
     min-height: 80%;
-    max-height: 100%;
-    background-color: gray;
-    height: 90%;
+    min-height: fit-content;
     width: 60%;
+    background-color: gray;
+   
     background-color: #4d4d4d;
     box-shadow: -10px 8px 10px #141414, 3px 2.3px 10px #141414;
     position: relative;
