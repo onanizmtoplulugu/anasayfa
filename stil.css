@@ -128,6 +128,11 @@ nav .menue {
     opacity: 0;
     text-decoration:none;
 }
+.crypt{
+    overflow: scroll;
+    width: 600px;
+    white-space: normal;
+}
 @keyframes exist {
     0% {
         opacity: 0;
