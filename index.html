@@ -5,72 +5,56 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="stil.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com"> 
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet"> 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>  
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
     <title>Onanizm Topluluğu</title>
     <style>
     </style>
 </head>
-<body onload="daktilo()" >
-    <form>
-        <select id="lang-switch">
-            <option value="tr" selected>Turkish</option>
-            <option value="en">English</option>
-        </select>
-    </form>
+<body onload="daktilo()">
     <nav class="centerdummy">
         <div class="menue">
-            <a href="index.html" class="navitem firstNavItem"><h1 lang="tr">Giriş</h1><h1 lang="en">Introduction</h1></a>
-            <a href="hakkımızda.html" class="navitem secondNavItem"><h1 lang="tr">Projelerimiz</h1><h1 lang="en">Our Projects</h1></a>
+            <a href="index.html" class="navitem firstNavItem">
+                <h1>Giriş</h1>
+            </a>
+            <a href="hakkımızda.html" class="navitem secondNavItem">
+                <h1>Projelerimiz</h1>
+            </a>
         </div>
     </nav>
-        <div id="main-frame">
-            <div class="content-frame circular-border">
-                <h1 class="ic-yazi anime baslik hiText" id="hiText"></h1><br>
-                <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"> <img draggable="false" class="kurba" src="kurba.jpg"> </a>
-                <div class="centerdummy">
-                    <a href="https://discord.gg/8tCqCAW2E9" class="blue-button"><h3>Discord Sunucumuza Katılın!</h3></a>
-                    <a href="https://www.instagram.com/hacettepeonanizmtoplulugu/" class="purple-button"><h3>Instagram Hesabımızı Takip Edin!</h3></a>
-                </div>
-
+    <div id="main-frame">
+        <div class="content-frame circular-border">
+            <h1 class="ic-yazi anime baslik hiText" id="hiText"></h1>
+            <br>
+            <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">
+                <img draggable="false" class="kurba" src="kurba.jpg">
+            </a>
+            <div class="centerdummy">
+                <a href="https://discord.gg/8tCqCAW2E9" class="blue-button">
+                    <h3>Discord Sunucumuza Katılın!</h3>
+                </a>
+                <a href="https://www.instagram.com/hacettepeonanizmtoplulugu/" class="purple-button">
+                    <h3>Instagram Hesabımızı Takip Edin!</h3>
+                </a>
             </div>
+
         </div>
+    </div>
 
     <script>
-        var uzunluk = 0;
-        yazi = "Merhaba, Onanizm Topluluğuna hoş geldiniz."
-        function daktilo() {
-		if (uzunluk < yazi.length) {
-			setTimeout(daktilo, "40");
-			document.getElementById("hiText").innerHTML += yazi.charAt(uzunluk);
-			uzunluk++;
+    var uzunluk = 0;
+    yazi = "Merhaba, Onanizm Topluluğuna hoş geldiniz."
+    function daktilo() {
+        if (uzunluk < yazi.length) {
+            setTimeout(daktilo, "40");
+            document.getElementById("hiText").innerHTML += yazi.charAt(uzunluk);
+            uzunluk++;
 
 
-		}
-	}
-    </script>
-    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
-    <script>
-
-    $('[lang="tr"]').show(); // show just Korean text (you can change it)
-    $('#lang-switch').change(function () { // put onchange event when user select option from select
-        var lang = $(this).val(); // decide which language to display using switch case. The rest is obvious (i think)
-        switch (lang) {
-            case 'en':
-                $('[lang]').hide();
-                $('[lang="en"]').show();
-            break;
-            case 'tr':
-                $('[lang]').hide();
-                $('[lang="tr"]').show();
-            break;
-            default:
-                $('[lang]').hide();
-                $('[lang="tr"]').show();
-            }
-    });
+        }
+    }
     </script>
 </body>
 </html>
+
